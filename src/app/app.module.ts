@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SourcesListComponent } from './sources/sources-list.component';
-import { SourcesService } from './sources/sources.service';
+import { SourcesService } from './services/sources.service';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { SourcesService } from './sources/sources.service';
   imports: [
     BrowserModule
   ],
-  providers: [ SourcesService],
+  providers: [SourcesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

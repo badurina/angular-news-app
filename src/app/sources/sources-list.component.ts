@@ -1,4 +1,4 @@
-import { SourcesService } from './sources.service';
+import { SourcesService } from './../services/sources.service';
 import { Source } from './source';
 import { Component, OnInit } from '@angular/core';
 

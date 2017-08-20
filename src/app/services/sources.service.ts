@@ -1,4 +1,4 @@
-import { SOURCES } from './../../../mocks';
+import { SOURCES } from './../mocks/mocks';
 import { Injectable } from '@angular/core';
 
 @Injectable()
