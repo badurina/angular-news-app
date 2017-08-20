@@ -1,3 +1,5 @@
+import { SourcesService } from './sources.service';
+import { Source } from './source';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sources-list.component.css']
 })
 export class SourcesListComponent implements OnInit {
+  sources: Source[];
 
-  constructor() { }
+  constructor(private sourcesService: SourcesService) { }
 
   ngOnInit() {
+    this.sources = this.sourcesService.getSources();
   }
 
 }
